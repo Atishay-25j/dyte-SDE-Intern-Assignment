@@ -28,7 +28,7 @@ app.use(bodyParser.json());
 // Search logs based on the parameters
 app.get('/search', async (req, res) => {
   try {
-    const searchTerm = req.query.query; // assuming 'query' parameter for the search term
+    const searchTerm = req.query.para; // assuming 'para' parameter for the search term
     const results = await Log.find({
       $text: { $search: searchTerm },
     });
