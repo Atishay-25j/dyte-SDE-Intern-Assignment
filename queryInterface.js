@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 const app = express();
-const PORT = 4000;
+const PORT = 5000;
 
 mongoose.connect('mongodb://localhost:27017/logDB', {
   useNewUrlParser: true,
